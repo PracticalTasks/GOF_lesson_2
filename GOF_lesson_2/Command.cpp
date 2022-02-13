@@ -42,6 +42,7 @@ void DropBombCommand::execute()
 
 		bombsNumber--;
 		score -= Bomb::BombCost;
+
 }
 
 void DropNBombCommand::execute()
@@ -59,4 +60,5 @@ void DropNBombCommand::execute()
 
 	bombsNumber--;
 	score -= Bomb::BombCost;
+
 }

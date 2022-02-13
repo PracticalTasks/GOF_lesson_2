@@ -285,22 +285,18 @@ void SBomber::ProcessKBHit()
         break;
 
     case 'b':
-		nBombFlag = false;
 		DropBomb();
         break;
 
     case 'B':
-		nBombFlag = false;
         DropBomb();
         break;
 
 	case 'N':
-		nBombFlag = true;
 		DropNBomb();
 		break;
 
 	case 'n':
-		nBombFlag = true;
 		DropNBomb();
 		break;
 
