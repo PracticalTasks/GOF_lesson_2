@@ -166,12 +166,14 @@ void SBomber::DeleteDynamicObj(DynamicObject* pObj)
 {
 	pCommand = new DeleteDynamicObjCommand(pObj, vecDynamicObj);
 	pCommand->execute();
+	delete pCommand;
 }
 
 void SBomber::DeleteStaticObj(GameObject* pObj)
 {
 	pCommand = new DeleteStaticObjCommand(pObj, vecStaticObj);
 	pCommand->execute();
+	delete pCommand;
 }
 
 vector<DestroyableGroundObject*> SBomber::FindDestoyableGroundObjects() const
